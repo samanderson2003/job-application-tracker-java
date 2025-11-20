@@ -1,0 +1,17 @@
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/Application.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/config/DatabaseConfig.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/controller/AuthController.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/controller/DashboardController.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/controller/JobController.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/Contact.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/Document.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/FollowUp.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/InterviewNote.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/Job.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/JobLabel.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/model/User.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/repository/JobRepository.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/repository/UserRepository.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/service/AuthService.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/service/JobService.java
+/Users/samandersony/StudioProjects/job-application-tracker/src/main/java/com/jobtracker/service/UserService.java

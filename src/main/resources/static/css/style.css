@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Kanban Board Styles */
+.kanban-board {
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.kanban-column {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-header {
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.kanban-body {
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.kanban-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.kanban-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.kanban-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.kanban-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Job Card Styles */
+.job-card {
+    cursor: move;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+}
+
+.job-card .card {
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.job-card .card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15) !important;
+}
+
+.job-card .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.job-card .card-text {
+    color: #4a5568;
+}
+
+/* Sortable.js Ghost and Drag Classes */
+.sortable-ghost {
+    opacity: 0.4;
+    background: #f7fafc;
+}
+
+.sortable-drag {
+    opacity: 1;
+}
+
+/* Statistics Cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom Scrollbar for Kanban Columns */
+.kanban-column {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kanban-column {
+        min-width: 280px;
+    }
+    
+    .statistics-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #5568d3 0%, #653a8b 100%);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.job-card {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Badge Colors */
+.badge {
+    font-weight: 500;
+}
+
+/* Empty State */
+.kanban-body:empty::before {
+    content: "Drop jobs here";
+    display: block;
+    text-align: center;
+    color: #cbd5e0;
+    padding: 20px;
+    font-style: italic;
+}
