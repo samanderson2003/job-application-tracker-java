@@ -367,24 +367,3 @@ This is a college project, but contributions are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👏 Acknowledgments
-
-- Spring Boot Documentation
-- Bootstrap Team
-- Font Awesome
-- Sortable.js
-- MySQL Community
-
-## 📧 Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/job-application-tracker](https://github.com/yourusername/job-application-tracker)
-
----
-
-**Made with ❤️ for college project**
